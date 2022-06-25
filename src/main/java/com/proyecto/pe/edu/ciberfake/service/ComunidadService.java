@@ -28,7 +28,7 @@ public class ComunidadService {
     @Transactional
     public ComunidadDto guardar(ComunidadDto comunidadDto){
         comunidadDto.setComEstado(true);
-        Comunidad comunidad = comunidadRepository.save(comunidadMapper.mapComunidadToDto(comunidadDto, authService.obtenerUsuarioActual()));
+        Comunidad comunidad = comunidadRepository.save(comunidadMapper.mapDtoToComunidad(comunidadDto, authService.obtenerUsuarioActual()));
         comunidadDto.setComId(comunidad.getComId());
         comunidadDto.setUsuNombre(comunidad.getUsuario().getUsuNombre());
         comunidadDto.setComNumeroPosts(0);

@@ -9,7 +9,6 @@ import com.proyecto.pe.edu.ciberfake.model.Post;
 import com.proyecto.pe.edu.ciberfake.model.Usuario;
 
 
-
 @Mapper(componentModel = "spring")
 public interface ComentarioMapper {
 

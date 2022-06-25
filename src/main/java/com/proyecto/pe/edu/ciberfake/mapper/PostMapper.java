@@ -4,6 +4,8 @@ package com.proyecto.pe.edu.ciberfake.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.github.marlonlom.utilities.timeago.TimeAgo;
 import com.proyecto.pe.edu.ciberfake.dto.PostRequest;
 import com.proyecto.pe.edu.ciberfake.dto.PostResponse;
 import com.proyecto.pe.edu.ciberfake.model.*;
